@@ -85,7 +85,7 @@ price_prediction_project/
   - MAE ≈ 12.9 (USD)
 Notes: Results depend on dataset splits, preprocessing, and feature selection.
 
-## Key implementation notes (concise)
+## Key implementation notes 
 - The "100ml" problem: normalized units via regex in preprocessing.py to treat variations (100ml, 100 ml, 100ML) consistently.
 - Target leakage prevention: OOF mean encoding for Brand — the encoding for each fold is computed using other folds only.
 - Metric choice: SMAPE is preferred over RMSE to avoid over-penalizing high-priced outliers.
